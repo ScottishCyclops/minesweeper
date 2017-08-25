@@ -11,3 +11,11 @@ body > *
     font-family: monospace;
     font-size: 1.3em;
 }
+
+span
+{
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}

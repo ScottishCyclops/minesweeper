@@ -84,6 +84,9 @@
                     cell.revealed = false;
                     cell.flaged = false;
                     cell.mine = false;
+                    
+                    const span = document.createElement("span");
+                    cell.appendChild(span);
 
                     cell.oncontextmenu = e =>
                     {
@@ -195,10 +198,7 @@
         }
         else
         {
-            const span = document.createElement("span");
-            span.style.d
-            span.innerText = minesAround;
-            cell.appendChild(span);
+            cell.firstElementChild.innerText = minesAround;
             cell.style.color = colorFromNumMines(minesAround);
         }
     }
